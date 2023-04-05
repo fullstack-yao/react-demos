@@ -9,7 +9,7 @@ import NotFound from './pages/NotFound';
 const App: FC = () => {
   return (
     <BrowserRouter>
-      <div>
+      <div className="App">
         <Routes>
           <Route path="/todolist" element={<ToDoList />} />
           <Route path="/promiseall" element={<PromiseAll />} />
