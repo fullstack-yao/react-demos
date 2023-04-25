@@ -12,6 +12,7 @@ const App: FC = () => {
       <div className="App">
         <Routes>
           <Route path="/todolist" element={<ToDoList />} />
+          <Route path="/search" element={<ToDoList />} />
           <Route path="/promiseall" element={<PromiseAll />} />
           <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />
