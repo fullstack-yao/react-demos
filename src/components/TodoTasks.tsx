@@ -21,11 +21,10 @@ const Tasks = ({ tasks, setTasks, editTask }: Props) => {
   return (
     <div className="todoTasks">
       {tasks.map((task: ITask, index: number) => (
-        <div
-          className={task.done ? 'task done' : 'task'}
-          key={index}
-          onClick={() => completeTask(index)}>
-          <div className="content">
+        <div className="task" key={index}>
+          <div
+            className={task.done ? 'content done' : 'content'}
+            onClick={() => completeTask(index)}>
             <span>{task.taskName}</span>
             <span>{task.deadline}</span>
           </div>
